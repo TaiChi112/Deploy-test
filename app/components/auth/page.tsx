@@ -2,7 +2,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from 'react'
 
-export default function page() {
+export default function AuthPage() {
   const { data: session } = useSession();
 
     return (
