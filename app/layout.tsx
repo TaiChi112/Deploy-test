@@ -3,7 +3,6 @@
 
 import { Inter, Roboto_Mono } from "next/font/google";
 import Providers from "@/components/Providers";
-import { metadata } from "./metadata"; // นำเข้า metadata จากไฟล์ที่แยกออกมา
 
 const geistSans = Inter({
   variable: "--font-inter",
