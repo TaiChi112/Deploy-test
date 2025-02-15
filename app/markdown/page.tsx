@@ -2,13 +2,12 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
-import "highlight.js/styles/github-dark.css"; // Theme สำหรับ code block
+import "highlight.js/styles/github-dark.css";
 
 export default function MarkdownPage() {
   const [markdownContent, setMarkdownContent] = useState<string>("");
 
   useEffect(() => {
-    // โหลดไฟล์ content.md จาก public/
     fetch("/content.md")
       .then((response) => response.text())
       .then((text) => setMarkdownContent(text));
