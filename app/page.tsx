@@ -1,5 +1,9 @@
+import Auth from "@/app/components/auth/page";
 export default function Home() {
+
   return (
-    <main>App</main>
+    <main>
+      <Auth />
+    </main>
   );
 }
